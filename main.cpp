@@ -4,9 +4,9 @@ using namespace std;
 
 
 /** WRITE DOWN YOUR INFORMATION HERE */
-string name = ""; // put your name here
-string ID = ""; // put your student id here
-int group_id = 0; // your Group Number here (1-8)
+string name = "Muhammad Sulthon Asramanggala"; // put your name here
+string ID = "1301194008"; // put your student id here
+int group_id = 2; // your Group Number here (1-8)
 
 
 /** FUNCTIONS LIST, DO NOT MODIFY THESE */
@@ -150,7 +150,7 @@ string count_and_sum(int arr[], int n) {
 
     // YOUR CODES HERE
     //-----------------------
-
+        
 
     //-----------------------
     return "";
@@ -166,7 +166,19 @@ string group_and_average(int arr[], int n) {
 
     // YOUR CODES HERE
     //-----------------------
-
+        int jumlah ;
+        float average ;
+        for (int i = 0; i < n; i++) {
+            if ( arr[i]%i == 0 ) {
+                for ( int j = i;j < (n-1); j++){
+                    arr[j] = arr [j+1];
+                }
+            }
+            jumlah = jumlah + arr [i]
+        }
+        average = jumlah/n
+                    
+            
 
     //-----------------------
     return "";
